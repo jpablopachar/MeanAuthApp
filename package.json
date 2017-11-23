@@ -4,7 +4,18 @@
   "description": "App de autenticación de usuarios",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "bcrypt": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-jwt": "*"
   },
   "repository": {
     "type": "git",
@@ -15,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/jpablopachar/MeanAuthApp/issues"
   },
-  "homepage": "https://github.com/jpablopachar/MeanAuthApp#readme"
+  "homepage": "https://github.com/jpablopachar/MeanAuthApp#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
 }
